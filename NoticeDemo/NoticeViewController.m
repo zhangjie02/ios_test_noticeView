@@ -27,7 +27,7 @@ static NoticeViewController *instance = nil;
    
     [super viewDidLoad];
     
-    [self.view setBackgroundColor:[UIColor blackColor]];
+//    [self.view setBackgroundColor:[UIColor blackColor]];
     
     //get screen size
     float width = [[UIScreen mainScreen]bounds].size.width;
@@ -40,7 +40,7 @@ static NoticeViewController *instance = nil;
 
     
     //add bg img
-    UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, width,height)] ;
+    UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, width/2,height/2)] ;
     imageView.image = [UIImage imageNamed:@"notice_bg"];
     [self.view addSubview:imageView];
     
@@ -127,6 +127,7 @@ static NoticeViewController *instance = nil;
     NSLog(@"yes btn clicked");
 //    ViewController *viewController = [[ViewController alloc]init];
 //    [self.navigationController pushViewController:viewController animated:YES];
+    [self.view removeFromSuperview];
     
 }
 
