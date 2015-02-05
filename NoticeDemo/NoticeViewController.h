@@ -11,5 +11,5 @@
 @interface NoticeViewController : UIViewController<UIWebViewDelegate>{
     
 }
-
++(NoticeViewController *)getInstance;
 @end

@@ -15,6 +15,14 @@
 
 @implementation NoticeViewController
 
+static NoticeViewController *instance = nil;
++(NoticeViewController *)getInstance{
+    if (instance == nil) {
+        instance = [[NoticeViewController alloc]init];
+    }
+    return instance;
+}
+
 -(void)viewDidLoad{
    
     [super viewDidLoad];

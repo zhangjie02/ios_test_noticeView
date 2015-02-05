@@ -12,9 +12,6 @@
 @interface NoticeView : NSObject<UIWebViewDelegate>{
     
 }
-//@property(nonatomic,strong) UIView * noticeViewSub;
-//+(NoticeView *)getInstance;
-+(NoticeView *)showNoticeView;
 +(void)displayNoticeView;
 +(void)showTestView;
 @end

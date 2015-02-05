@@ -10,7 +10,7 @@
 
 @interface ViewController : UIViewController
 +(ViewController *)getInstance;
-
+-(void)printView;
 -(IBAction)showNoticeViewClicked:(id)sender;
 @end
 

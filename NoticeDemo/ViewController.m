@@ -36,8 +36,6 @@ static ViewController * instance = nil;
 
 -(void)showNoticeViewClicked:(id)sender{
     NSLog(@"notice view show clicked.");
-//    NoticeViewController *noticeView = [[NoticeViewController alloc]init];
-//    [self.navigationController pushViewController:noticeView animated:YES];
 
 //    NoticeViewController *noticeView = [[NoticeViewController alloc]init];
 //    [self presentModalViewController:noticeView animated:YES];
@@ -46,19 +44,13 @@ static ViewController * instance = nil;
 //    imageView.image = [UIImage imageNamed:@"notice_bg"];
 //    [self.view addSubview:imageView];
 
-    
-//    [NoticeView displayNoticeView];
-    
-    
-//    [self.view addSubview:[NoticeView showNoticeView]];
-//    [self.view addSubview:NoticeViewController];
-//    NoticeViewController *view = [[NoticeViewController alloc]init];
-    
-//    [self addChildViewController:view];
-//    [self.view addSubview:view.view];
-//    [NoticeView displayNoticeView];
     NSLog(@"notice 2");
-    [NoticeView showTestView];
+//    [NoticeView displayNoticeView];
+    [self.view addSubview:[NoticeViewController getInstance].view];
+}
+
+-(void)printView{
+    NSLog(@"print view controller.");
 }
 
 @end
